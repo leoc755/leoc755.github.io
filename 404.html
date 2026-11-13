@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="https://blue-star-fe85.ttpotle2023.workers.dev/resources/css/Tethys.Vercel.app/style.css">
+</head>
+<body>
+    <div id="page">
+        <img src="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.jfif" alt="Download Tethys banner" class="banner">
+        <hr>
+        <span>Today's date is: <span id="date"></span></span>
+        <script>
+            const monthsArr = 
+                ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                
+            const currentDateObj = new Date();
+            const currentDate  = currentDateObj.getDate();
+            const currentMonth  = monthsArr[currentDateObj.getMonth()];
+            const currentYear = currentDateObj.getFullYear();
+            const d = `${currentDate} ${currentMonth} ${currentYear}`;
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <hr>
+        <div id="main">
+            <h2>404 Not Found</h2>
+            <p>The item that you requested was not found on this server.</p>
+            <a href="/">Go back to the homepage</a>
+        </div>
+        <hr>
+        <address>2026-present leoc755/Tethys</address>
+    </div>
+</body>
+</html>
