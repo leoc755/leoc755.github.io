@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Tethys</title>
+    <link rel="stylesheet" href="https://blue-star-fe85.ttpotle2023.workers.dev/resources/css/Tethys.Vercel.app/style.css">
+</head>
+<body>
+    <div id="page">
+        <img src="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.jfif" alt="Download Tethys banner">
+        <hr>
+        <span>Today's date is: <span id="date"></span></span>
+        <script>
+            const monthsArr = 
+                ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                
+            const currentDateObj = new Date();
+            const currentDate  = currentDateObj.getDate();
+            const currentMonth  = monthsArr[currentDateObj.getMonth()];
+            const currentYear = currentDateObj.getFullYear();
+            const d = `${currentDate} ${currentMonth} ${currentYear}`;
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <hr>
+        <div id="main">
+            <h3>Portable Downloads</h3>
+            <ul>
+                <li><a href="https://github.com/leoc755/Tethys/releases/download/b6.3/Tethys-Beta6.3.7z">Beta 6.3</a></li>
+                <li><a href="https://github.com/leoc755/Tethys/releases/download/b5.11/Tethys-Beta5.11.7z">Beta 5.11</a></li>
+                <li><a href="https://github.com/leoc755/Tethys/releases/download/b5.10/Tethys-Beta5.10.7z">Beta 5.10</a></li>
+            </ul>
+            <h3>Installer Downloads</h3>
+            <ul>
+                <li><a href="https://github.com/leoc755/Tethys/releases/download/b6.3/TethysSetup.exe">Beta 6.3</a></li>
+            </ul>
+            <a href="https://github.com/leoc755/Tethys">View GitHub repo</a><br>
+            <a href="https://github.com/leoc755/Tethys/archive/refs/heads/main.zip">Download latest source code from GitHub</a>
+        </div>
+        <hr>
+        <address>2026-present leoc755/Tethys</address>
+    </div>
+</body>
+</html>
