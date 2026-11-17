@@ -8,7 +8,11 @@
 </head>
 <body>
     <div id="page">
-        <img src="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.jfif" alt="Download Tethys banner" class="banner">
+        <picture class="banner">
+            <source srcset="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.avif" type="image/avif">
+            <source srcset="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.webp" type="image/webp">
+            <img src="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.jfif" type="image/jpeg" alt="Download Tethys banner">
+        </picture>
         <hr>
         <span>Today's date is: <span id="date"></span></span>
         <script>
