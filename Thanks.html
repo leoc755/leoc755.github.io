@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for downloading Tethys!</title>
+    <link rel="stylesheet" href="https://blue-star-fe85.ttpotle2023.workers.dev/resources/css/Tethys.Vercel.app/style.css">
+    <link rel="shortcut icon" href="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/favicon.ico" type="image/x-icon">
+    <meta http-equiv="refresh" content="1; url=https://github.com/leoc755/Tethys/releases/latest/download/TethysSetup.exe">
+</head>
+<body>
+    <div id="page">
+        <picture class="banner">
+            <source srcset="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.avif" type="image/avif">
+            <source srcset="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.webp" type="image/webp">
+            <img src="https://blue-star-fe85.ttpotle2023.workers.dev/resources/misc/Tethys.Vercel.app/DownloadTethys.jfif" type="image/jpeg" alt="Download Tethys banner">
+        </picture>
+        <hr>
+        <span>Today's date is: <span id="date"></span></span>
+        <script>
+            const monthsArr = 
+                ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                
+            const currentDateObj = new Date();
+            const currentDate  = currentDateObj.getDate();
+            const currentMonth  = monthsArr[currentDateObj.getMonth()];
+            const currentYear = currentDateObj.getFullYear();
+            const d = `${currentDate} ${currentMonth} ${currentYear}`;
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <hr>
+        <div id="main">
+            <h3>Thanks for downloading Tethys!</h3>
+            <p>Your download should start shortly. If it doesn't start, click <a href="https://github.com/leoc755/Tethys/releases/latest/download/TethysSetup.exe">here</a>.</p>
+        </div>
+        <hr>
+        <address>2026-present leoc755/Tethys</address>
+    </div>
+</body>
+</html>
